@@ -51,8 +51,10 @@
     .hero-copy { max-width: 440px; margin-bottom: 30px; color: #e3e8e2; font-size: 16px; line-height: 1.65; }
     .hero .button { background: var(--accent); color: var(--ink); }
     .hero .button:hover { background: white; }
-    .hero-note { display: inline-flex; align-items: center; gap: 9px; margin-left: 17px; color: #e4e8e1; font-size: 12px; }
-    .hero-note::before { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); content: ""; }
+    .hero-details { display: flex; flex-wrap: wrap; gap: 18px 30px; margin-top: 28px; }
+    .hero-detail { display: grid; gap: 4px; padding-left: 13px; border-left: 2px solid var(--accent); }
+    .hero-detail-label { color: #d3dad3; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .hero-detail-value { color: white; font-size: 16px; font-weight: 700; }
 
     .intro { display: grid; grid-template-columns: 1.1fr .9fr; gap: 70px; align-items: end; padding-block: 88px 78px; }
     .section-label { margin-bottom: 15px; color: var(--blue); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
@@ -163,7 +165,16 @@
         <h1 id="hero-title">En ren vogn for dit sjak.</h1>
         <p class="hero-copy">Rengøring af skurvogne, kontorer og mandskabsfaciliteter på byggepladsen. Vi gør de rum, dit hold bruger, klar til arbejdsdagen.</p>
         <a class="button" href="#contact">Få et tilbud <span aria-hidden="true">↗</span></a>
-        <span class="hero-note">Rengøring tilpasset byggepladsen</span>
+        <div class="hero-details" aria-label="Priser og dækningsområde">
+          <div class="hero-detail">
+            <span class="hero-detail-label">Pris fra</span>
+            <span class="hero-detail-value">200 kr. pr. skurvogn</span>
+          </div>
+          <div class="hero-detail">
+            <span class="hero-detail-label">Vi dækker</span>
+            <span class="hero-detail-value">Horsens · Vejle · Juelsminde-halvøen</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -242,7 +253,7 @@
         <div>
           <p class="section-label">Lad os tage en snak</p>
           <h2 id="contact-title">Skal vi tale om din byggeplads?</h2>
-          <p class="contact-copy">Fortæl lidt om opgaven, så vender vi tilbage om rengøring af jeres skurvogne. Priser fra 200 kr. pr. skurvogn. Vi kører i Horsens, Vejle og på Juelsminde-halvøen.</p>
+          <p class="contact-copy">Fortæl lidt om opgaven, så vender vi tilbage om rengøring af jeres skurvogne.</p>
           <a class="contact-direct" href="mailto:Skurvognren@gmail.com">Skurvognren@gmail.com <span aria-hidden="true">↗</span></a>
           <br>
           <a class="contact-direct" href="tel:+4560538700">60 53 87 00</a>
